@@ -1,0 +1,98 @@
+.wsl-button {
+  display: inline-flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 1.05rem;
+  border: 1px solid var(--ink, #11120f);
+  background: var(--ink, #11120f);
+  color: white;
+  font-size: var(--step--1, 0.84rem);
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition:
+    transform 180ms var(--ease, ease),
+    background 180ms var(--ease, ease),
+    color 180ms var(--ease, ease);
+}
+
+.wsl-button::after {
+  content: "↗";
+  font-size: 1.15em;
+}
+
+.wsl-button:hover {
+  background: var(--signal, #ff4f23);
+  color: var(--ink, #11120f);
+  transform: translateY(-2px);
+}
+
+.wsl-button--light {
+  border-color: var(--paper-bright, #fbfaf6);
+  background: var(--paper-bright, #fbfaf6);
+  color: var(--ink, #11120f);
+}
+
+.wsl-arrow-link {
+  display: inline-flex;
+  min-height: 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid var(--ink, #11120f);
+  font-size: var(--step--1, 0.84rem);
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition:
+    color 160ms ease,
+    padding 160ms ease;
+}
+
+.wsl-arrow-link:hover {
+  color: var(--signal-dark, #c72e09);
+  padding-inline-start: 0.3rem;
+}
+
+.wsl-arrow-link--light {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.wsl-arrow-link--light:hover {
+  color: var(--signal, #ff4f23);
+}
+
+.wsl-button:focus-visible,
+.wsl-arrow-link:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--ink, #11120f);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wsl-button,
+  .wsl-arrow-link {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .wsl-button,
+  .wsl-arrow-link {
+    border: 2px solid ButtonText;
+  }
+  .wsl-button:focus-visible,
+  .wsl-arrow-link:focus-visible {
+    outline-color: Highlight;
+    box-shadow: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .wsl-button,
+  .wsl-arrow-link {
+    min-height: 2.75rem;
+  }
+}

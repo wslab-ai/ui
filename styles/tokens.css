@@ -1,0 +1,32 @@
+:root {
+  --ink: #11120f;
+  --ink-soft: #32342e;
+  --paper: #f3f0e8;
+  --paper-bright: #fbfaf6;
+  --line: rgba(17, 18, 15, 0.18);
+  --line-strong: rgba(17, 18, 15, 0.42);
+  --signal: #ff4f23;
+  --signal-dark: #c72e09;
+  --blue: #1647ff;
+  --mint: #c5efdb;
+  --font-sans:
+    "Manrope Variable", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+  --font-display:
+    "Archivo Variable", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+  --step--1: clamp(0.75rem, 0.72rem + 0.13vw, 0.84rem);
+  --step-0: clamp(0.94rem, 0.9rem + 0.2vw, 1.08rem);
+  --step-1: clamp(1.15rem, 1.03rem + 0.6vw, 1.5rem);
+  --step-2: clamp(1.45rem, 1.15rem + 1.45vw, 2.35rem);
+  --step-3: clamp(2rem, 1.38rem + 3vw, 3.85rem);
+  --step-4: clamp(3rem, 1.55rem + 7vw, 7.4rem);
+  --space-1: clamp(0.5rem, 0.43rem + 0.35vw, 0.75rem);
+  --space-2: clamp(0.8rem, 0.68rem + 0.6vw, 1.25rem);
+  --space-3: clamp(1.2rem, 0.95rem + 1.2vw, 2rem);
+  --space-4: clamp(1.8rem, 1.3rem + 2.4vw, 3.5rem);
+  --space-5: clamp(3rem, 2rem + 4.8vw, 6.5rem);
+  --space-6: clamp(4.5rem, 2.6rem + 8vw, 10rem);
+  --gutter: clamp(1rem, 3vw, 3.25rem);
+  --max: 92rem;
+  --radius: 0.8rem;
+  --ease: cubic-bezier(0.2, 0.75, 0.25, 1);
+}

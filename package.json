@@ -1,0 +1,63 @@
+{
+  "name": "@workstarlab/ui",
+  "version": "0.1.0",
+  "description": "Accessible Svelte 5 UI foundations for Workstar Lab interfaces.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Workstar Lab <hello@workstarlab.com>",
+  "homepage": "https://github.com/wslab-ai/ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wslab-ai/ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wslab-ai/ui/issues"
+  },
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "ui",
+    "design-system",
+    "accessibility"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "files": [
+    "src",
+    "styles"
+  ],
+  "svelte": "./src/index.ts",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./ArrowLink.svelte": "./src/ArrowLink.svelte",
+    "./ActionLink.svelte": "./src/ActionLink.svelte",
+    "./tokens.css": "./styles/tokens.css",
+    "./actions.css": "./styles/actions.css"
+  },
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "verify": "npm run format:check && npm run check && npm test && npm pack --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "prettier": "^3.8.3",
+    "prettier-plugin-svelte": "^4.1.0",
+    "svelte": "^5.56.1",
+    "svelte-check": "^4.6.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.11"
+  }
+}
