@@ -2,12 +2,12 @@
 
 Workstar Lab's public Svelte 5 UI foundations: design tokens and accessible, localizable action links. This is a small versioned design system, not a replacement for native HTML or a general-purpose component framework.
 
-The package is currently installed from the [public GitHub repository](https://github.com/wslab-ai/ui) because npm publication requires a new Workstar Lab token with 2FA bypass. The npm package name is reserved in this manifest but **not yet published**.
+The package is currently installed from the [public GitHub repository](https://github.com/wslab-ai/ui) because npm publication requires a new Workstar Lab token with 2FA bypass. The npm package name is specified in this manifest but **not yet published**.
 
 ## Install from GitHub
 
 ```sh
-npm install 'git+https://github.com/wslab-ai/ui.git#<commit-sha>'
+npm install '@workstarlab/ui@https://codeload.github.com/wslab-ai/ui/tar.gz/<commit-sha>'
 ```
 
 Import styles once at the application root:
@@ -39,4 +39,4 @@ npm install
 npm run verify
 ```
 
-Requires Node.js 20+ and Svelte 5. Licensed under MIT. See the [Wiki](https://github.com/wslab-ai/ui/wiki) for usage and accessibility notes.
+Requires Node.js 20+ and Svelte 5. Licensed under MIT. The [Wiki source](docs/wiki/Home.md) covers installation, tokens, components and accessibility; GitHub Wiki is enabled for the repository.
