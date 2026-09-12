@@ -10,9 +10,9 @@
   --blue: #1647ff;
   --mint: #c5efdb;
   --font-sans:
-    "Manrope Variable", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    'Manrope Variable', 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif;
   --font-display:
-    "Archivo Variable", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    'Archivo Variable', 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif;
   --step--1: clamp(0.75rem, 0.72rem + 0.13vw, 0.84rem);
   --step-0: clamp(0.94rem, 0.9rem + 0.2vw, 1.08rem);
   --step-1: clamp(1.15rem, 1.03rem + 0.6vw, 1.5rem);

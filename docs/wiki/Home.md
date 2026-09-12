@@ -1,6 +1,6 @@
 # Workstar Lab UI
 
-This wiki documents the public Svelte 5 UI foundations used by [workstarlab.com](https://workstarlab.com/). The package contains design tokens, action styles and two native-link components. It is intentionally small: new components are added only when a stable shared pattern exists.
+This wiki documents the optional visual layer for the [Workstar](https://github.com/wslab-ai/workstar) UI framework. It contains the CSS tokens and action styles used by [workstarlab.com](https://workstarlab.com/), plus two native-link Workstar components. New components are added only when a stable shared pattern exists.
 
 - [Getting started](Getting-Started)
 - [Design tokens](Design-Tokens)
